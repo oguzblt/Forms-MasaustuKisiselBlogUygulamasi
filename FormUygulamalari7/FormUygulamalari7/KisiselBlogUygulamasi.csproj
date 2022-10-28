@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{508C137B-7D88-4351-8B9C-FC4DE6EE4E7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FormUygulamalari7</RootNamespace>
+    <AssemblyName>FormUygulamalari7</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridView.Designer.cs">
+      <DependentUpon>DataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlogAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlogAnasayfa.Designer.cs">
+      <DependentUpon>BlogAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Captcha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Captcha.Designer.cs">
+      <DependentUpon>Captcha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListViewCRUD.Designer.cs">
+      <DependentUpon>ListViewCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profil.Designer.cs">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebBrowser.Designer.cs">
+      <DependentUpon>WebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressBar.Designer.cs">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DijitalSaat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DijitalSaat.Designer.cs">
+      <DependentUpon>DijitalSaat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HesapMakinesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesapMakinesi.Designer.cs">
+      <DependentUpon>HesapMakinesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DersSecim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DersSecim.Designer.cs">
+      <DependentUpon>DersSecim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasitAnket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasitAnket.Designer.cs">
+      <DependentUpon>BasitAnket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EkranKlavyesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EkranKlavyesi.Designer.cs">
+      <DependentUpon>EkranKlavyesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DinamikAraclar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DinamikAraclar.Designer.cs">
+      <DependentUpon>DinamikAraclar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DataGridView.resx">
+      <DependentUpon>DataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlogAnasayfa.resx">
+      <DependentUpon>BlogAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Captcha.resx">
+      <DependentUpon>Captcha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListViewCRUD.resx">
+      <DependentUpon>ListViewCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profil.resx">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebBrowser.resx">
+      <DependentUpon>WebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBar.resx">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DijitalSaat.resx">
+      <DependentUpon>DijitalSaat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HesapMakinesi.resx">
+      <DependentUpon>HesapMakinesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DersSecim.resx">
+      <DependentUpon>DersSecim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasitAnket.resx">
+      <DependentUpon>BasitAnket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EkranKlavyesi.resx">
+      <DependentUpon>EkranKlavyesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DinamikAraclar.resx">
+      <DependentUpon>DinamikAraclar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\settings_icon.jpg" />
+    <Content Include="Properties\user_icon.jpg" />
+    <None Include="Resources\vesika foto.png" />
+    <None Include="Resources\user_icon.jpg" />
+    <None Include="Resources\settings_icon.jpg" />
+    <None Include="Resources\oblogo1.jpg" />
+    <None Include="Resources\oblogo.jpg" />
+    <None Include="Resources\metrologo.jpg" />
+    <None Include="Resources\metro.gif" />
+    <None Include="Resources\math_wallpaper.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
